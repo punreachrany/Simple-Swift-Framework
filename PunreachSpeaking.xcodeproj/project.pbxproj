@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		8C8D02BD2626828E00312361 /* PunreachSpeaking.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C8D02BB2626828E00312361 /* PunreachSpeaking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C8D02C5262682AB00312361 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D02C4262682AB00312361 /* Manager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8C8D02B82626828E00312361 /* PunreachSpeaking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PunreachSpeaking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C8D02BB2626828E00312361 /* PunreachSpeaking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PunreachSpeaking.h; sourceTree = "<group>"; };
 		8C8D02BC2626828E00312361 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C8D02C4262682AB00312361 /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = ../../Manager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				8C8D02BB2626828E00312361 /* PunreachSpeaking.h */,
 				8C8D02BC2626828E00312361 /* Info.plist */,
+				8C8D02C4262682AB00312361 /* Manager.swift */,
 			);
 			path = PunreachSpeaking;
 			sourceTree = "<group>";
@@ -94,6 +97,7 @@
 				TargetAttributes = {
 					8C8D02B72626828E00312361 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C8D02C5262682AB00312361 /* Manager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		8C8D02C12626828E00312361 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = DK4QC2YKXF;
@@ -277,6 +283,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = punreachrany.PunreachSpeaking;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +292,7 @@
 		8C8D02C22626828E00312361 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = DK4QC2YKXF;
